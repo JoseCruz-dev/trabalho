@@ -362,7 +362,7 @@ TECNOLOGIAS
     display:flex;
     flex-wrap:wrap;
     gap:10px;
-    margin-top:18px;
+    margin:18px;
 
 }
 
@@ -396,7 +396,13 @@ TECNOLOGIAS
 PORTFÓLIO
 ========================= */
 
-
+span.link-projeto a {
+      color: white;
+    background: #294f61;
+    padding: 10px;
+    margin: 18px;
+    text-decoration: none;
+}
 #portfolio{
 
     padding:80px 10%;
