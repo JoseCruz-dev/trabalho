@@ -686,6 +686,11 @@ html, body {
         font-size: 1.4rem;
     }
 
+    span.link-projeto a {
+        padding: 8px;
+        margin: 10px;
+        font-size: 0.9rem;
+    }
     .texto-sobre h3 {
         font-size: 1.5rem;
     }
