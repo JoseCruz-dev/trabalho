@@ -9,6 +9,15 @@ RESET
     font-family:Arial, sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 /* =========================
@@ -29,7 +38,7 @@ body{
     background-repeat:no-repeat;
 
     color:#222;
-
+  overflow-x: hidden;
     transition:.3s;
 
 }
@@ -517,7 +526,15 @@ RESPONSIVO
 
 
 @media(max-width:800px){
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
 
     #sobre .card{
 
@@ -558,4 +575,128 @@ RESPONSIVO
 
     }
 
+}
+
+/* =========================
+RESPONSIVIDADE
+========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+    section {
+        padding: 50px 5%;
+    }
+
+    #sobre .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-perfil {
+        width: 100%;
+        padding-right: 0;
+        border-right: none;
+        margin-bottom: 20px;
+    }
+
+    .texto-sobre {
+        width: 100%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+    header {
+         padding: 1.5rem;
+        position: relative;
+        height: auto;
+
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+         width: 100%;
+    max-width: 300px;
+        text-align: center;
+    }
+
+    .formacao-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formacao-lista li {
+           flex: none;
+        width: 100%;
+        max-width: 100%;
+     
+    }
+
+    .portfolio-lista li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icone {
+        margin-bottom: 10px;
+    }
+
+    .info {
+        justify-content: center;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    .texto-sobre h3 {
+        font-size: 1.5rem;
+    }
+
+    .foto-perfil img {
+           width: 180px;
+        height: 180px;
+        border-radius: 1rem;
+        border: 1px solid #222;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
 }
