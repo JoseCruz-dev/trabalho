@@ -1,0 +1,561 @@
+/* =========================
+RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+
+/* =========================
+BODY
+========================= */
+
+body{
+
+    background:
+    linear-gradient(
+        rgb(238 238 238 / 82%),
+        rgb(238 238 238 / 95%)
+    ),
+    url("https://img.magnific.com/vetores-gratis/numeros-de-queda-digitais-do-codigo-binario-do-estilo-da-matriz-fundo-azul_1017-37387.jpg?semt=ais_hybrid&w=740&q=80");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:#222;
+
+    transition:.3s;
+
+}
+
+
+
+/* =========================
+HEADER
+========================= */
+
+
+header{
+
+    background:
+    linear-gradient(45deg,#0a2937,#294f61);
+    color:#00eaff;
+    padding:2rem;
+    position:sticky;
+    top:0;
+    z-index:10;
+
+}
+
+
+
+header h1{
+
+    text-align:center;
+
+}
+
+
+
+/* =========================
+MENU
+========================= */
+
+
+nav{
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:15px;
+
+}
+
+
+nav a{
+
+    padding:1rem;
+    color:#236885;
+    text-decoration:none;
+    font-weight:bold;
+    background:#fff;
+    border-radius:1rem;
+
+}
+
+
+
+/* =========================
+SEÇÕES
+========================= */
+
+
+section{
+
+    min-height:350px;
+    padding:70px 10%;
+
+}
+
+
+
+.section-title{
+
+    width:100%;
+    color:#fff;
+    background:#0a2937;
+    font-weight:100;
+    padding:1rem;
+
+}
+
+
+p.aviso-formacao {
+    background: #ff00002e;
+    padding: 1rem;
+    border-radius: 5rem;
+}
+/* =========================
+CARDS
+========================= */
+
+
+.card{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    margin-top:20px;
+
+    box-shadow:0 0 10px #bbb;
+
+}
+
+
+
+/* =========================
+SOBRE
+========================= */
+
+
+#sobre{
+
+    padding:80px 10%;
+
+}
+
+
+
+#sobre .card{
+
+    display:flex;
+    align-items:center;
+    gap:40px;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.4);
+
+}
+
+
+
+.foto-perfil{
+
+    width:30%;
+    display:flex;
+    justify-content:center;
+    padding-right:40px;
+    border-right:1px solid #444;
+
+}
+
+
+
+.foto-perfil img{
+
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #222;
+
+}
+
+
+
+.texto-sobre{
+
+    width:70%;
+    color:#6f6f6f;
+    font-size:1.1rem;
+    line-height:1.7;
+
+}
+
+
+
+.texto-sobre h3{
+
+    color:#444;
+    font-weight:100;
+    font-size:2rem;
+    margin-bottom:20px;
+
+}
+
+
+
+.texto-sobre b{
+
+    color:#368993;
+
+}
+
+
+
+.info{
+
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.info span{
+
+    background:#1b1b1b;
+    padding:12px 18px;
+    border-radius:10px;
+    border:1px solid #333;
+    color:white;
+
+}
+
+
+
+/* =========================
+FORMAÇÃO
+========================= */
+
+
+.formacao-lista{
+
+    list-style:none;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+
+}
+
+
+
+.formacao-lista li{
+
+    display:flex;
+    align-items:center;
+    gap:25px;
+    padding:30px;
+    flex:1 1 400px;
+    max-width:400px;
+    background:
+    linear-gradient(145deg,#1f1f1f,#2b2b2b);
+    color:white;
+    border-radius:20px;
+    border:2px solid #236885;
+    box-shadow: 0 10px 30px rgba(0,0,0,.5);
+    transition:.35s;
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+
+.formacao-lista li::before{
+
+    content:"";
+    position:absolute;
+    width:120px;
+    height:120px;
+    background:#236885;
+    filter:blur(80px);
+    top:-40px;
+    right:-40px;
+
+}
+
+
+
+.formacao-lista li:hover{
+
+    transform:translateY(-10px);
+    box-shadow: 0 15px 40px rgba(35,104,133,.5);
+
+}
+
+
+
+.formacao-lista img{
+
+    width:65px;
+    height:65px;
+    padding:10px;
+    background:#111;
+    border-radius:15px;
+
+}
+
+
+
+.formacao-lista b{
+
+    display:block;
+    color:#00eaff;
+    font-size:18px;
+    margin-bottom:8px;
+
+}
+
+
+
+.formacao-lista p{
+
+    color:#ddd;
+    font-size:15px;
+    line-height:1.5;
+
+}
+
+
+
+/* =========================
+TECNOLOGIAS
+========================= */
+
+
+.tecnologias{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:18px;
+
+}
+
+
+
+.tecnologias span{
+
+    background:#1c1c1c;
+    border:1px solid #333;
+    color:#00e5ff;
+    padding:7px 14px;
+    border-radius:20px;
+    font-size:.85rem;
+    transition:.3s;
+
+}
+
+
+
+.tecnologias span:hover{
+
+    background:#00e5ff;
+    color:#000;
+    transform:translateY(-3px);
+
+}
+
+
+
+/* =========================
+PORTFÓLIO
+========================= */
+
+
+#portfolio{
+
+    padding:80px 10%;
+
+}
+
+
+
+.portfolio-lista{
+
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+
+}
+
+
+
+.portfolio-lista li{
+
+    display:flex;
+    align-items:center;
+    gap:30px;
+    padding:35px;
+    background:#111;
+    border-radius:15px;
+    transition:.3s;
+
+}
+
+
+
+.portfolio-lista li:hover{
+
+    transform:translateY(-5px);
+    border-color:#00e5ff;
+
+}
+
+
+
+.icone{
+
+    min-width:70px;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#1c1c1c;
+    border-radius:15px;
+    font-size:30px;
+    color:#00e5ff;
+
+}
+
+
+
+/* =========================
+FORMULÁRIO
+========================= */
+
+
+form{
+
+    max-width:500px;
+
+}
+
+
+
+input,
+textarea{
+
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+
+}
+
+
+
+textarea{
+    height:120px;
+
+}
+
+
+
+button{
+
+    padding:10px 20px;
+    cursor:pointer;
+
+}
+
+
+
+/* =========================
+FOOTER
+========================= */
+
+
+footer{
+
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+
+}
+
+
+
+#contato .card{
+
+    display:flex;
+    justify-content:center;
+
+}
+
+
+
+/* =========================
+RESPONSIVO
+========================= */
+
+
+@media(max-width:800px){
+
+
+    #sobre .card{
+
+        flex-direction:column;
+
+    }
+
+
+    .foto-perfil{
+
+        width:100%;
+
+        border-right:none;
+
+        border-bottom:1px solid #444;
+
+        padding-bottom:30px;
+
+    }
+
+
+    .texto-sobre{
+
+        width:100%;
+
+    }
+
+
+}
+
+
+
+@media(max-width:700px){
+
+    .formacao-lista li{
+
+        width:100%;
+
+    }
+
+}
